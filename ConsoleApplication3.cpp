@@ -1,17 +1,20 @@
 // ConsoleApplication3.cpp: определяет точку входа для консольного приложения.
 
 #include "stdafx.h"
-#include <iostream>     
+#include <iostream>  
 #include <cmath>                                 
-#include <math.h>
 
 int main()
 {
 	int x;
 	int y;
+	double b;
 	
+	printf("Write first number \n");
 	std::cin >> x;
+	printf("Write second number \n");
 	std::cin >> y;
-	std::cout << 3 / (y - x) * exp(x + y) - log(pow(x, 2)) + asin(pow(y, 3)) << "%.5f end";
+	b = 3 / (y - x) * exp(x + y) - log(pow(x, 2)) + asin(pow(y, 3));
+	printf("Your answer: %.5f. ", b);
 	return 0;
 }
